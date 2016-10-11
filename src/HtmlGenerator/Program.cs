@@ -44,7 +44,7 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
                         Log.Write($"Invalid Server Path: '{mapping}'", ConsoleColor.Red);
                         continue;
                     }
-                    serverPathMappings.Add(parts[0], parts[1]);
+                    serverPathMappings.Add(Path.GetFullPath(parts[0]), parts[1]);
                     continue;
                 }
 
